@@ -1,133 +1,64 @@
-# Overflow Stack
-The overflow stack family (Web Front End Stack, Database Stack, .NET Stack etc.):
-http://overflowstack.github.io
-
-# Localization
-中文: 
-https://github.com/unruledboy/WebFrontEndStack/blob/master/README.zh-cn.md
-
-Español: 
-https://github.com/unruledboy/WebFrontEndStack/blob/master/README.es-es.md
+# 前端技术栈
+作为一名前端开发人员，可能会触碰的知识与技能点，包括浏览器、框架、类库、工具等。作为选择方向与努力的一个一个参考。
 
 
-# WebFrontEndStack
-Web front-end stack: browsers, platforms, libraries, frameworks, tools etc.
-
-![Image of Web Front End Stack](Web Front End Stack.png)
-
-# Generate image yourself
-
-## Prepare for environment
-You should have Visual Studio 2010+ installed in Windows. 
-
-1. Install [nodejs](https://nodejs.org). (Shoule be >= iojs 1.8.0)
-
-2. Install [Phantomjs](http://phantomjs.org).
-
-3. Install [Python 2.7](https://www.python.org/).
-
-4. ``npm install``
-
-If the error occurs, you can check the dependence of [phantomjs-node](https://github.com/sgentle/phantomjs-node/wiki), [node-gyp](https://github.com/TooTallNate/node-gyp#installation).
-
-## Run commands
-``npm start`` for start a server to open the html directly.
-
-``npm run build`` for generate the image.
-
-
-## Options
-```bash
-
-  -h, --help                           Display help message.
-  -p, --port number                    (Default: 3000) Set the port what express listening.
-  -ues, --update_existed_stargazers    (Default: false) Update project's stargazers including existed.
-  --phantomjs                          The task to generate the image.
-  --readme                             The task to update readme.
-  --updatestargazers                   The task to update the count of the stargazers.
-
-```
-
-
-# What and why?
-Have you ever wondered:
-* what technologies web front end really includes? 
-* how many do I possess?
-
-
-I could not find a really comprehensive diagram that shows the web front end technology stack, so I come up with my own version.
-
-There might be issues here and there, like the category, the individual ones, but the beauty is you can modify it as you want.
-
-You can have a graphical preview here (use mouse to move / zoom): 
-
-https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm 
-
-
-# The Web Front End Stack
-<!--BUILD_START-->
-
-- Web Front End
-	- Browser
+- Web前端开发技术栈
+	- 浏览器
 		- [Internet Explorer](http://windows.microsoft.com/en-us/internet-explorer/download-ie)
 		- [Chrome](http://www.google.com/chrome/)
 		- [Firefox](https://www.mozilla.org/)
 		- [Safari](http://www.apple.com/safari/)
 		- [Opera](http://www.opera.com/)
 		- [Edge](https://www.microsoft.com/en-us/windows/microsoft-edge)
-		- [Netscape ;-)](https://en.wikipedia.org/wiki/Netscape)
-	- Protocol
-		- [HTTP/1.1](https://www.ietf.org/rfc/rfc2616.txt)
-			- URI
-			- Session
-			- Authentication
-			- Request
-			- Response
-		- [HTTP/2](https://en.wikipedia.org/wiki/HTTP/2)
-			- Compression
-			- Minification
-			- Server Push
-		- WebSocket
-	- The 3 Pillars
-		- HTML (HyperText Markup Language)
-		- CSS (Cascading Style Sheets)
-		- JavaScript
-	- Standards
-		- W3C
-			- HTML
-			- CSS
-			- XHTML
-			- XML
-	- Core Concepts
-		- HTML
-			- [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
-			- [Element](https://developer.mozilla.org/en-US/docs/Web/API/Element)
-			- Attribute
-		- JavaScript
-			- [Prototype](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype)
-			- [Scope](https://developer.mozilla.org/en-US/docs/Glossary/Scope)
-			- [Closure](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
-			- [JSON (JavaSript Object Notation)](https://developer.mozilla.org/en-US/docs/Glossary/JSON)
-			- [AJAX (Asynchronous JavaScript and XML)](https://developer.mozilla.org/en-US/docs/AJAX)
-		- CSS
-			- Selector
-			- Priority
-			- Specificity
-			- Box Model
-	- Rendering Engine
+		- [Netscape](https://en.wikipedia.org/wiki/Netscape) 💀
+	- 渲染引擎
 		- [Trident (IE)](https://en.wikipedia.org/wiki/Trident_(layout_engine))
 		- [Blink / prev. WebKit (Chrome)](http://www.chromium.org/blink)
 		- [Gecko (Firefox)](https://developer.mozilla.org/en-us/docs/Mozilla/Gecko)
 		- [WebKit (Safari)](http://www.webkit.org/)
 		- [Blink / prev. Presto (Opera)](http://www.chromium.org/blink)
 		- [EdgeHTML (Edge)](https://en.wikipedia.org/wiki/EdgeHTML)
-	- JavaScript Engine
+	- 脚本引擎
 		- [JScript (IE8- / ASP)](https://en.wikipedia.org/wiki/JScript)
 		- [Chakra (IE9+ / Edge)](https://en.wikipedia.org/wiki/Chakra_(JScript_engine))
 		- [V8 (Chrome / Opera / Nodejs / MongoDB)](https://developers.google.com/v8/?hl=zh-CN) [[GitHub]](https://github.com/v8/v8/)
 		- [SpiderMonkey (Firefox)]( https://developer.mozilla.org/en-us/docs/Mozilla/Projects/SpiderMonkey)
 		- [JavaScriptCore (Safari)](https://en.wikipedia.org/wiki/WebKit#JavaScriptCore)
-	- Runtime
+	- 协议
+		- [HTTP/1.1](https://www.ietf.org/rfc/rfc2616.txt)
+			- 链接
+			- 会话
+			- 授权
+			- 请求
+			- 响应
+		- [HTTP/2](https://en.wikipedia.org/wiki/HTTP/2)
+			- 压缩
+			- 打包
+			- 服务器端推送
+		- WebSocket
+	- Web三剑客
+		- HTML (HyperText Markup Language)
+			- [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
+			- [Element](https://developer.mozilla.org/en-US/docs/Web/API/Element)
+			- Attribute
+		- CSS (Cascading Style Sheets)
+			- Selector
+			- Priority
+			- Specificity
+			- Box Model
+		- JavaScript
+			- [Prototype](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype)
+			- [Scope](https://developer.mozilla.org/en-US/docs/Glossary/Scope)
+			- [Closure](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
+			- [JSON (JavaSript Object Notation)](https://developer.mozilla.org/en-US/docs/Glossary/JSON)
+			- [AJAX (Asynchronous JavaScript and XML)](https://developer.mozilla.org/en-US/docs/AJAX)
+	- 标准
+		- W3C
+			- HTML
+			- XHTML
+			- CSS
+			- XML
+	- 运行时
 		- Cookie
 		- Local Cache
 		- Session Storage
@@ -141,7 +72,8 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 			- Fonts
 			- Audios
 			- Videos
-	- Editors
+	- 代码编辑器
+		- [Visual Studio Code (Linux & Mac)](https://code.visualstudio.com/) [[GitHub]](https://github.com/Microsoft/vscode)
 		- [Sublime Text](http://www.sublimetext.com/)
 		- [WebStorm](https://www.jetbrains.com/webstorm/)
 		- [Atom](https://atom.io/) [[GitHub]](https://github.com/atom/atom/)
@@ -150,40 +82,38 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 		- [Brackets](http://brackets.io/) [[GitHub]](https://github.com/adobe/brackets/)
 		- [Light Table](http://lighttable.com/) [[GitHub]](https://github.com/LightTable/LightTable/)
 		- [Visual Studio](https://www.visualstudio.com/)
-		- [Visual Studio Code (Linux & Mac)](https://code.visualstudio.com/) [[GitHub]](https://github.com/Microsoft/vscode)
-		- Dreamweaver ;-)
-		- FrontPage / SharePoint Designer ;-)
-	- Build Tasks
-		- Minification
-		- Compilation
-		- Concatenation
-		- Uglification
-		- Image Optimization
-		- Unit Testing
-	- Build Tools
+		- Dreamweaver
+		- FrontPage / SharePoint Designer
+	- 代码编译
+		- 压缩
+		- 编译
+		- 合并
+		- 混淆
+		- 图像优化
+		- 单元测试
+	- 编译工具
 		- [Grunt](http://www.gruntjs.com/) [[GitHub]](https://github.com/cowboy/jquery-tiny-pubsub/)
 		- [Gulp](http://gulpjs.com/) [[GitHub]](https://github.com/gulpjs/gulp/)
 		- [Brunch](http://brunch.io/) [[GitHub]](https://github.com/brunch/brunch/)
 		- [Yeoman](http://yeoman.io/)
 		- Broccoli [[GitHub]](https://github.com/broccolijs/broccoli/)
-	- Debug
+	- 调试工具
 		- [Developer Tools](https://developer.chrome.com/devtools)
-		- [Firebug](http://getfirebug.com/) [[GitHub]](https://github.com/firebug/firebug/)
-	- Base Tools
+		- [Firebug](http://getfirebug.com/) [[GitHub]](https://github.com/firebug/firebug/) 😇  
+	- JS 新领域
 		- [Node.js](https://nodejs.org/) [[GitHub]](https://github.com/joyent/node/)
-		- [Phantom.js](http://phantomjs.org/) [[GitHub]](https://github.com/ariya/phantomjs/)
-		- [SpiderMonkey](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey)
-	- Quality
+		- [Phantom.js](http://phantomjs.org/) [[GitHub]](https://github.com/ariya/phantomjs/) 
+	- JS 编码质量与风格控制
 		- [JSLint](http://www.jslint.com/) [[GitHub]](https://github.com/douglascrockford/JSLint/)
 		- [JSHint](http://jshint.com/) [[GitHub]](https://github.com/jshint/jshint/)
 		- [jscs](http://jscs.info/) [[GitHub]](https://github.com/jscs-dev/node-jscs)
 		- [Closure Linter](https://developers.google.com/closure/utilities/)
-	- Package
+	- 包管理
 		- [npm](https://www.npmjs.com/) [[GitHub]](https://github.com/npm/npm/)
+		- [yarn](https://yarnpkg.com) [[GitHub]](https://github.com/yarnpkg/yarn)
 		- [Bower](http://bower.io/) [[GitHub]](https://github.com/bower/bower/)
-		- [yarn](https://yarnpkg.com/) [[GitHub]](https://github.com/yarnpkg/yarn/)
-	- Test
-		- Tools
+	- 测试
+		- 工具
 			- [QUnit](https://qunitjs.com/) [[GitHub]](https://github.com/jquery/qunit/)
 			- [Jasmine](http://jasmine.github.io/) [[GitHub]](https://github.com/jasmine/jasmine/)
 			- [Mocha](https://mochajs.org/) [[GitHub]](https://github.com/mochajs/mocha/)
@@ -196,8 +126,7 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 			- nodeunit [[GitHub]](https://github.com/caolan/nodeunit/)
 			- tape [[GitHub]](http://github.com/substack/tape)
 			- [nightmare](http://nightmarejs.org/) [[GitHub]](https://github.com/segmentio/nightmare)
-			- [Enzyme](http://airbnb.io/enzyme/) [[GitHub]](https://github.com/airbnb/enzyme)
-		- Composite
+		- 在线工具
 			- [Sauce Labs](https://saucelabs.com/)
 			- [Browser Stack](https://www.browserstack.com/)
 			- [Browser Shots](http://browsershots.org/)
@@ -206,13 +135,13 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 			- [Cross Browser Testing](https://crossbrowsertesting.com/)
 			- [Browsera](http://www.browsera.com/)
 			- [SortSite](http://www.powermapper.com/products/sortsite/checks/browser-compatibility/)
-	- Frameworks / Libraries
-		- JavaScript base library
-			- [jQuery](https://jquery.com/) [[GitHub]](https://github.com/jquery/jquery/)
+	- 库 / 框架
+		- 工具库
 			- [Prototype](http://prototypejs.org/) [[GitHub]](https://github.com/sstephenson/prototype/)
+			- [jQuery](https://jquery.com/) [[GitHub]](https://github.com/jquery/jquery/)
 			- [Zepto](http://zeptojs.com/) [[GitHub]](https://github.com/madrobby/zepto/)
 			- [MooTool](http://mootools.net/) [[GitHub]](https://github.com/mootools/mootools-core/)
-		- Modular
+		- 模块化
 			- ES6 Module
 			- CommonJS
 				- [webpack](http://webpack.github.io/) [[GitHub]](https://github.com/webpack/webpack/)
@@ -221,7 +150,7 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 				- [RequireJS](http://requirejs.org/) [[GitHub]](https://github.com/jrburke/requirejs/)
 			- UMD
 				- umd [[GitHub]](https://github.com/umdjs/umd/)
-		- JavaScript Framework
+		- JS 框架
 			- [AngularJS](https://angularjs.org/) [[GitHub]](https://github.com/angular/angular.js/)
 			- [Backbone](http://backbonejs.org/) [[GitHub]](https://github.com/jashkenas/backbone/)
 			- [Knockout](http://knockoutjs.com/) [[GitHub]](https://github.com/SteveSanderson/knockout/)
@@ -231,7 +160,7 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 			- [Deft.js](http://deftjs.org/) [[GitHub]](https://github.com/deftjs/DeftJS/)
 			- [Vue](http://vuejs.org/) [[GitHub]](https://github.com/yyx990803/vue/)
 			- [Riot](http://riotjs.com/) [[GitHub]](https://github.com/riot/riot)
-		- UI framework
+		- UI 框架
 			- [Bootstrap](http://getbootstrap.com/) [[GitHub]](https://github.com/twbs/bootstrap/)
 			- [Semantic UI](http://semantic-ui.com/) [[GitHub]](https://github.com/Semantic-Org/Semantic-UI/)
 			- [Foundation](http://foundation.zurb.com/) [[GitHub]](https://github.com/zurb/foundation/)
@@ -239,11 +168,10 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 			- [WinJS](https://dev.windows.com/en-us/develop/winjs) [[GitHub]](https://github.com/winjs/winjs)
 			- [Pure](http://purecss.io/) [[GitHub]](https://github.com/yahoo/pure/)
 			- [Amaze UI](http://amazeui.org/) [[GitHub]](https://github.com/allmobilize/amazeui)
-			- [Onsne UI](https://onsen.io/) [[GitHub]](https://github.com/OnsenUI/OnsenUI)
 		- WebSocket
 			- [Socket.io](http://socket.io/) [[GitHub]](https://github.com/Automattic/socket.io/)
 			- web-socket-js [[GitHub]](https://github.com/gimite/web-socket-js/)
-		- Data Visualization
+		- 数据可视化
 			- [D3](http://d3js.org/) [[GitHub]](https://github.com/mbostock/d3/wiki/Gallery/)
 			- [Echarts](http://echarts.baidu.com) [[GitHub]](https://github.com/ecomfe/esl/)
 			- [HighCharts](http://www.highcharts.com/) [[GitHub]](https://github.com/highslide-software/highcharts.com/)
@@ -253,12 +181,12 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 			- [Three.js](http://threejs.org/) [[GitHub]](https://github.com/mrdoob/three.js/)
 			- [Babylon.js](http://www.babylonjs.com/) [[GitHub]](https://github.com/BabylonJS/Babylon.js/)
 			- [Pixi.js](http://www.pixijs.com/) [[GitHub]](https://github.com/GoodBoyDigital/pixi.js/)
-		- CSS3 Animation
+		- CSS3 动画
 			- [Animate.css](https://daneden.github.io/animate.css/) [[GitHub]](https://github.com/daneden/animate.css/)
 			- [bounce.js](http://bouncejs.com/) [[GitHub]](https://github.com/tictail/bounce.js/)
 			- [Effeckt.css](https://h5bp.github.io/Effeckt.css/) [[GitHub]](https://github.com/h5bp/Effeckt.css/)
 			- [move.js](https://visionmedia.github.io/move.js/) [[GitHub]](https://github.com/visionmedia/move.js/)
-		- Flow Controller
+		- 流程控制
 			- ES6
 				- Promise
 				- Generator
@@ -271,19 +199,19 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 				- Bluebird [[GitHub]](https://github.com/petkaantonov/bluebird/)
 				- q [[GitHub]](https://github.com/kriskowal/q/)
 				- when.js [[GitHub]](https://github.com/cujojs/when/)
-		- Functional
+		- 函数式编程
 			- [bacon.js](http://baconjs.github.io/) [[GitHub]](https://github.com/baconjs/bacon.js/)
 			- [immutable.js](https://facebook.github.io/immutable-js/) [[GitHub]](https://github.com/facebook/immutable-js/)
 			- [ramda](http://ramdajs.com/) [[GitHub]](http://github.com/ramda/ramda)
 			- [underscore.js](http://underscorejs.org/) [[GitHub]](https://github.com/jashkenas/underscore)
 			- [lodash](https://lodash.com/) [[GitHub]](https://github.com/lodash/lodash)
 			- [ReactiveX](http://reactivex.io/) [[GitHub]](https://github.com/Reactive-Extensions/RxJS)
-		- Mobile UI
+		- 手机 UI 框架
 			- [jQuery Mobile](https://jquerymobile.com/) [[GitHub]](https://github.com/jquery/jquery-mobile/)
 			- [Jo](http://joapp.com/) [[GitHub]](https://github.com/davebalmer/jo/)
 			- [Dojo Mobile](https://dojotoolkit.org/reference-guide/1.10/dojox/mobile.html)
 			- [Lungo](http://lungo.tapquo.com/) [[GitHub]](https://github.com/tapquo/Lungo.js/)
-	- CSS Pre-processors
+	- CSS 预处理器
 		- LESS
 			- [LESS](http://lesscss.org/) [[GitHub]](https://github.com/less/less.js/)
 			- [Hat](http://lesshat.madebysource.com/) [[GitHub]](https://github.com/csshat/lesshat/)
@@ -293,9 +221,9 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 			- [Gumby](http://www.gumbyframework.com/) [[GitHub]](https://github.com/GumbyFramework/Gumby/)
 		- Stylus
 			- nib [[GitHub]](https://github.com/tj/nib/)
-	- Future Standards
+	- 未来标准
 		- [babel](https://babeljs.io/) [[GitHub]](https://github.com/babel/babel)
-	- Template
+	- 模板引擎
 		- [Handlebars](http://handlebarsjs.com/) [[GitHub]](https://github.com/wycats/handlebars.js/)
 		- [Haml](http://haml.info/) [[GitHub]](https://github.com/haml/haml/)
 		- [Slim](http://slim-lang.com/) [[GitHub]](https://github.com/slim-template/slim/)
@@ -303,29 +231,33 @@ https://rawgit.com/unruledboy/WebFrontEndStack/master/ux/WebFrontEndStack.htm
 		- [Ejs](http://www.embeddedjs.com/)
 		- [Spacebars](http://meteorcapture.com/spacebars/)
 		- [mustache](http://mustache.github.io/) [[GitHub]](https://github.com/janl/mustache.js/)
-	- Modernisation
+	- 统一化
 		- [Normalize](http://necolas.github.io/normalize.css/) [[GitHub]](https://github.com/necolas/normalize.css/)
 		- Reset
-	- Best Practices
+	- 最佳实践
 		- [SEO](https://en.wikipedia.org/wiki/Search_engine_optimization)
 		- Responsiveness
 		- [CDN](https://en.wikipedia.org/wiki/Content_delivery_network)
-	- Security
+	- 安全
 		- Sandbox
+			- gf3 [[GitHub]](https://github.com/gf3/sandbox)
 		- [XSS](https://en.wikipedia.org/wiki/Cross-site_scripting)
+			- [XSS'OR](http://xssor.io/) [[GitHub]](https://github.com/evilcos/xssor2)
 		- [CORS](http://www.w3.org/TR/cors/)
-	- Intermediate Languages
+	- 中间语言
 		- [CoffeeScript](http://coffeescript.org/) [[GitHub]](https://github.com/jashkenas/coffeescript/)
 		- [TypeScript](http://www.typescriptlang.org/) [[GitHub]](https://github.com/Microsoft/TypeScript/)
 		- ClojureScript [[GitHub]](https://github.com/clojure/clojurescript/)
 		- [JSX (Facebook)](http://facebook.github.io/react/docs/jsx-in-depth.html)
-	- Mobile Application Development
+	- 移动应用开发
 		- [PhoneGap / Cordova](https://cordova.apache.org/) [[GitHub]](https://github.com/apache/cordova-android/)
 		- [MUI](http://dev.dcloud.net.cn/mui/) [[GitHub]](https://github.com/dcloudio/mui/)
 		- [React Native](https://facebook.github.io/react-native/) [[GitHub]](https://github.com/facebook/react-native/)
 		- [Ionic](http://ionicframework.com/) [[GitHub]](https://github.com/driftyco/ionic/)
-	- Desktop Application Development
+	- 桌面应用开发
 		- [Electron](http://electron.atom.io/) [[GitHub]](https://github.com/atom/electron)
 		- [NW.js](http://nwjs.io/) [[GitHub]](https://github.com/nwjs/nw.js)
-
-<!--BUILD_END-->
+ 	- 多端技术
+		- [Weex](https://weex.apache.org/) [[GitHub]](https://github.com/apache/incubator-weex/)
+		- [Rax](https://alibaba.github.io/rax/) [[GitHub]](https://github.com/apache/incubator-weex/)
+		- [Taro](https://taro.aotu.io/) [[GitHub]](https://github.com/NervJS/taro)
