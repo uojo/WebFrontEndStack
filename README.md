@@ -186,7 +186,9 @@
 			- [bounce.js](http://bouncejs.com/) [[GitHub]](https://github.com/tictail/bounce.js/)
 			- [Effeckt.css](https://h5bp.github.io/Effeckt.css/) [[GitHub]](https://github.com/h5bp/Effeckt.css/)
 			- [move.js](https://visionmedia.github.io/move.js/) [[GitHub]](https://github.com/visionmedia/move.js/)
-		- 流程控制
+		- CSS 重置
+			- [Normalize](http://necolas.github.io/normalize.css/) [[GitHub]](https://github.com/necolas/normalize.css/)
+		- 异步编程
 			- ES6
 				- Promise
 				- Generator
@@ -231,9 +233,6 @@
 		- [Ejs](http://www.embeddedjs.com/)
 		- [Spacebars](http://meteorcapture.com/spacebars/)
 		- [mustache](http://mustache.github.io/) [[GitHub]](https://github.com/janl/mustache.js/)
-	- 统一化
-		- [Normalize](http://necolas.github.io/normalize.css/) [[GitHub]](https://github.com/necolas/normalize.css/)
-		- Reset
 	- 最佳实践
 		- [SEO](https://en.wikipedia.org/wiki/Search_engine_optimization)
 		- Responsiveness
@@ -260,4 +259,7 @@
  	- 多端技术
 		- [Weex](https://weex.apache.org/) [[GitHub]](https://github.com/apache/incubator-weex/)
 		- [Rax](https://alibaba.github.io/rax/) [[GitHub]](https://github.com/apache/incubator-weex/)
+	- 小程序多端技术
 		- [Taro](https://taro.aotu.io/) [[GitHub]](https://github.com/NervJS/taro)
+		- [megalo](https://megalojs.org/) [[Github]](https://github.com/kaola-fed/megalo)
+	
